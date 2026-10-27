@@ -1,0 +1,5 @@
+# Optional CPU-only dense retrieval runtime. No PyTorch/CUDA dependency.
+numpy==2.3.5
+onnxruntime==1.23.2
+tokenizers==0.22.2
+faiss-cpu==1.13.0

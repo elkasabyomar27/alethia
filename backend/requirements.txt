@@ -1,0 +1,5 @@
+fastapi==0.121.0
+pydantic==2.12.3
+uvicorn==0.52.1
+pypdf==6.21.2
+defusedxml==0.7.1

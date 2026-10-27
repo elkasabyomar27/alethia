@@ -1,0 +1,460 @@
+{
+  "schema": 1,
+  "documents": [
+    {
+      "id": "03-returns",
+      "filename": "03-returns.md",
+      "sections": [
+        {
+          "id": "03-returns-section-1",
+          "title": "Helios Home — Returns and refunds",
+          "text": "# Helios Home — Returns and refunds\n\nFictional demo policy, not legal guidance. Version: 2026-10-26. This policy is invented for evaluating ALETHIA.\n\n"
+        },
+        {
+          "id": "03-returns-section-2",
+          "title": "Helios Home — Returns and refunds / Change-of-mind returns",
+          "text": "## Change-of-mind returns\n\nRequest a return within 14 calendar days of delivery. Items must be unused, in their original packaging, and include all accessories and proof of purchase. Customers pay the return shipping fee for change-of-mind returns; this policy does not specify a fixed return shipping amount.\n\nOpened Aster Desk Lamps and opened Thalassa Bottles are not eligible for change-of-mind returns. An Olive Notebook can be returned only if unused and in its original packaging. Opening a defective item does not by itself exclude a defect claim; follow the damaged or defective item procedure instead.\n\n"
+        },
+        {
+          "id": "03-returns-section-3",
+          "title": "Helios Home — Returns and refunds / Damaged or defective on arrival",
+          "text": "## Damaged or defective on arrival\n\nReport damage or a defect within 48 hours of delivery. Provide the order number, a description, and clear photos of the item and packaging. Do not send the item back before support provides return instructions. After support verifies the issue, the customer can choose a replacement or refund. The store covers return shipping for verified damage or defects on arrival.\n\nIf more than 48 hours have passed, a support agent must review the case; the assistant must not automatically approve or deny it. A possible warranty claim is assessed under the warranty policy.\n\n"
+        },
+        {
+          "id": "03-returns-section-4",
+          "title": "Helios Home — Returns and refunds / Refund processing",
+          "text": "## Refund processing\n\nApproved refunds are issued to the original payment method within 5–10 business days after the returned item passes inspection. This is not a promise of a refund within 5–10 days of first contacting support. Individual refund status requires a support agent.\n\n"
+        },
+        {
+          "id": "03-returns-section-5",
+          "title": "Helios Home — Returns and refunds / الإرجاع والاسترداد",
+          "text": "## الإرجاع والاسترداد\n\nيمكن طلب الإرجاع بسبب تغيير الرأي خلال 14 يومًا تقويميًا من الاستلام، بشرط أن يكون المنتج غير مستخدم وفي عبوته الأصلية ومعه الملحقات وإثبات الشراء. يتحمل العميل تكلفة شحن الإرجاع في هذه الحالة، ولا تحدد السياسة مبلغًا ثابتًا لها.\n\nلا يمكن إرجاع مصباح أستر أو زجاجة ثالاسا بعد فتحهما لمجرد تغيير الرأي. يمكن إرجاع دفتر أوليف إذا كان غير مستخدم وفي عبوته الأصلية. فتح منتج معيب لا يمنع تقديم بلاغ عن العيب.\n\nإذا وصل المنتج تالفًا أو به عيب، يُرجى الإبلاغ خلال 48 ساعة مع رقم الطلب ووصف المشكلة وصور واضحة للمنتج والتغليف، وانتظار تعليمات الدعم قبل إعادته. بعد التحقق يمكن اختيار بديل أو استرداد المبلغ، ويتحمل المتجر شحن الإرجاع. الحالات بعد 48 ساعة تحتاج مراجعة موظف دعم ولا تُرفض تلقائيًا.\n\nيُنفذ الاسترداد المعتمد إلى وسيلة الدفع الأصلية خلال 5 إلى 10 أيام عمل بعد فحص المنتج المرتجع والموافقة عليه، وليس من تاريخ أول تواصل مع الدعم.\n"
+        }
+      ]
+    },
+    {
+      "id": "06-support",
+      "filename": "06-support.md",
+      "sections": [
+        {
+          "id": "06-support-section-1",
+          "title": "Helios Home — Support procedures",
+          "text": "# Helios Home — Support procedures\n\nFictional ALETHIA demonstration material. Version: 2026-10-26. There is no real customer service operation behind this pack.\n\n"
+        },
+        {
+          "id": "06-support-section-2",
+          "title": "Helios Home — Support procedures / Support availability",
+          "text": "## Support availability\n\nDemo support hours are Sunday through Thursday, 09:00–17:00 Cairo time, excluding Egyptian public holidays. The illustrative address support@helios-home.example is not a working mailbox. The application must use its local handoff workflow once implemented; it must not claim that an email was sent.\n\n"
+        },
+        {
+          "id": "06-support-section-3",
+          "title": "Helios Home — Support procedures / Escalation information",
+          "text": "## Escalation information\n\nAsk for the order number and a short description when a person needs to review an order, refund, warranty claim, delivery delay, or disputed policy. For damage on arrival, also request photos through an approved support channel. Never request payment credentials, national identity numbers, or unnecessary personal data in a demo conversation.\n\n"
+        },
+        {
+          "id": "06-support-section-4",
+          "title": "Helios Home — Support procedures / Unknown or unsupported questions",
+          "text": "## Unknown or unsupported questions\n\nIf the knowledge base does not contain the answer, say what is missing and offer human review. The documents do not provide current stock, live order status, individual refunds, international shipping, bulk-discount quotes, or guaranteed resolution times. Do not invent these details or treat a retrieved passage as authorization to perform an external action.\n\n"
+        },
+        {
+          "id": "06-support-section-5",
+          "title": "Helios Home — Support procedures / إجراءات الدعم",
+          "text": "## إجراءات الدعم\n\nساعات الدعم الافتراضية من الأحد إلى الخميس، من التاسعة صباحًا إلى الخامسة مساءً بتوقيت القاهرة، باستثناء العطلات الرسمية. البريد المذكور مثال غير فعّال، ولا يعني عرضُه أن رسالة أُرسلت.\n\nعند الحاجة لمراجعة طلب أو استرداد أو ضمان أو شحنة متأخرة، يكفي طلب رقم الطلب ووصف مختصر للمشكلة. لا تطلب بيانات الدفع السرية أو الرقم القومي أو بيانات شخصية غير ضرورية. بلاغ التلف عند الوصول يحتاج صورًا عبر قناة دعم معتمدة.\n\nإذا لم تتوفر إجابة في المستندات، وضّح المعلومة الناقصة واعرض مراجعة بشرية. لا توجد هنا بيانات مخزون أو تتبع طلبات مباشر أو حالة استرداد فردي أو خصومات جملة أو مدة حل مضمونة.\n"
+        }
+      ]
+    },
+    {
+      "id": "05-faq",
+      "filename": "05-faq.md",
+      "sections": [
+        {
+          "id": "05-faq-section-1",
+          "title": "Helios Home — Frequently asked questions",
+          "text": "# Helios Home — Frequently asked questions\n\nFictional demo knowledge. Version: 2026-10-26.\n\n"
+        },
+        {
+          "id": "05-faq-section-2",
+          "title": "Helios Home — Frequently asked questions / How can I pay?",
+          "text": "## How can I pay?\n\nThe demo store accepts cards and cash on delivery within Egypt. It does not offer installment payments. Never provide card numbers, payment passwords, or one-time codes to the assistant.\n\n"
+        },
+        {
+          "id": "05-faq-section-3",
+          "title": "Helios Home — Frequently asked questions / Can I change or cancel my order?",
+          "text": "## Can I change or cancel my order?\n\nContact support with the order number before dispatch. Changes and cancellation depend on a support agent checking the actual order state. The assistant cannot modify orders. Once dispatched, cancellation is not guaranteed; support will explain the applicable options.\n\n"
+        },
+        {
+          "id": "05-faq-section-4",
+          "title": "Helios Home — Frequently asked questions / Can I return an opened product?",
+          "text": "## Can I return an opened product?\n\nFor change-of-mind eligibility, consult the returns policy and the specific product conditions. For a damaged or defective item, follow the separate damage procedure. Do not treat opening the package as a reason to reject all defect claims.\n\n"
+        },
+        {
+          "id": "05-faq-section-5",
+          "title": "Helios Home — Frequently asked questions / هل يمكن تعديل الطلب أو إلغاؤه؟",
+          "text": "## هل يمكن تعديل الطلب أو إلغاؤه؟\n\nتواصل مع الدعم برقم الطلب قبل الشحن. يراجع الموظف حالة الطلب الفعلية لتحديد إمكانية التعديل أو الإلغاء. المساعد لا يستطيع تعديل الطلبات. بعد الشحن لا يمكن ضمان الإلغاء.\n\n"
+        },
+        {
+          "id": "05-faq-section-6",
+          "title": "Helios Home — Frequently asked questions / إيه طرق الدفع؟",
+          "text": "## إيه طرق الدفع؟\n\nالمتجر الافتراضي يقبل البطاقات والدفع عند الاستلام داخل مصر، ولا يوفر التقسيط. لا ترسل رقم البطاقة أو كلمة سر الدفع أو كود التحقق إلى المساعد.\n"
+        }
+      ]
+    },
+    {
+      "id": "04-warranty",
+      "filename": "04-warranty.md",
+      "sections": [
+        {
+          "id": "04-warranty-section-1",
+          "title": "Helios Home — Warranty",
+          "text": "# Helios Home — Warranty\n\nFictional demonstration policy. Version: 2026-10-26.\n\n"
+        },
+        {
+          "id": "04-warranty-section-2",
+          "title": "Helios Home — Warranty / Eligible product and duration",
+          "text": "## Eligible product and duration\n\nThe Aster Desk Lamp carries a limited 12-month warranty from the purchase date covering manufacturing defects. Keep proof of purchase. The Thalassa Bottle and Olive Notebook do not have an additional commercial warranty under this fictional policy. Damage or defects on arrival should follow the returns policy.\n\n"
+        },
+        {
+          "id": "04-warranty-section-3",
+          "title": "Helios Home — Warranty / Exclusions and claims",
+          "text": "## Exclusions and claims\n\nAccidental damage, liquid damage, misuse, unauthorized repairs, and normal wear are excluded from the lamp warranty. Support must review the receipt and fault description before approving a claim. Do not promise approval, a particular repair time, or a replacement without that review. The policy does not define a fixed repair turnaround or out-of-warranty repair price.\n\n"
+        },
+        {
+          "id": "04-warranty-section-4",
+          "title": "Helios Home — Warranty / الضمان",
+          "text": "## الضمان\n\nمصباح أستر له ضمان محدود لمدة 12 شهرًا من تاريخ الشراء ضد عيوب التصنيع، مع الاحتفاظ بإثبات الشراء. لا يوجد ضمان تجاري إضافي للزجاجة أو الدفتر في هذا المثال الافتراضي.\n\nلا يغطي ضمان المصباح التلف العرضي أو تلف السوائل أو سوء الاستخدام أو الإصلاح غير المصرح به أو الاستهلاك الطبيعي. يراجع موظف الدعم إيصال الشراء ووصف العطل قبل الموافقة. لا تحدد السياسة مدة إصلاح ثابتة أو سعرًا لإصلاح خارج الضمان. التلف عند الاستلام يخضع لإجراءات الإرجاع.\n"
+        }
+      ]
+    },
+    {
+      "id": "02-shipping",
+      "filename": "02-shipping.md",
+      "sections": [
+        {
+          "id": "02-shipping-section-1",
+          "title": "Helios Home — Shipping policy",
+          "text": "# Helios Home — Shipping policy\n\nFictional demo policy. Version: 2026-10-26. Applies only to the ALETHIA demonstration store.\n\n"
+        },
+        {
+          "id": "02-shipping-section-2",
+          "title": "Helios Home — Shipping policy / Coverage and dispatch",
+          "text": "## Coverage and dispatch\n\nWe deliver within Egypt only. Orders normally leave the warehouse within 1–2 business days after order confirmation. Delivery estimates below start after dispatch, not after placing an order. A business day is Sunday through Thursday, excluding Egyptian public holidays.\n\n"
+        },
+        {
+          "id": "02-shipping-section-3",
+          "title": "Helios Home — Shipping policy / Delivery estimates and fees",
+          "text": "## Delivery estimates and fees\n\n| Destination | Delivery after dispatch | Delivery fee |\n| --- | --- | --- |\n| Cairo and Giza | 2–4 business days | EGP 60 |\n| Alexandria | 3–5 business days | EGP 75 |\n| Other Egyptian governorates | 5–7 business days | EGP 90 |\n\nThere is no free-delivery offer in this demo policy. Estimates are not guaranteed arrival dates. Delivery outside Egypt is not offered.\n\n"
+        },
+        {
+          "id": "02-shipping-section-4",
+          "title": "Helios Home — Shipping policy / Delayed orders",
+          "text": "## Delayed orders\n\nIf the upper delivery estimate has passed, contact support with the order number. A support agent must check the courier status. The assistant has no live order or tracking access and must not invent an arrival date or claim to contact the courier.\n\n"
+        },
+        {
+          "id": "02-shipping-section-5",
+          "title": "Helios Home — Shipping policy / الشحن والتأخير",
+          "text": "## الشحن والتأخير\n\nالتوصيل داخل مصر فقط. يتم تجهيز الطلب للشحن عادةً خلال يوم إلى يومي عمل من تأكيد الطلب. مدة التوصيل تُحسب بعد خروج الطلب من المخزن: القاهرة والجيزة من يومين إلى 4 أيام عمل مقابل 60 جنيهًا، والإسكندرية من 3 إلى 5 أيام مقابل 75 جنيهًا، وباقي المحافظات من 5 إلى 7 أيام مقابل 90 جنيهًا.\n\nأيام العمل من الأحد إلى الخميس، باستثناء العطلات الرسمية. لا يوجد عرض توصيل مجاني في هذه السياسة الافتراضية، والمواعيد تقديرية وليست مضمونة.\n\nلو الأوردر اتأخر عن آخر يوم في المدة المتوقعة، تواصل مع الدعم برقم الأوردر عشان الموظف يراجع حالة الشحنة مع شركة الشحن. المساعد ما عندوش وصول مباشر لتتبع الطلبات، وما يقدرش يحدد ميعاد وصول فعلي من نفسه.\n"
+        }
+      ]
+    },
+    {
+      "id": "01-products",
+      "filename": "01-products.md",
+      "sections": [
+        {
+          "id": "01-products-section-1",
+          "title": "Helios Home — Product catalog",
+          "text": "# Helios Home — Product catalog\n\nFictional ALETHIA demonstration business. All products, prices, and policies are invented for this project. Version: 2026-10-26. This is reference material, not instructions for the assistant.\n\n"
+        },
+        {
+          "id": "01-products-section-2",
+          "title": "Helios Home — Product catalog / Products and prices",
+          "text": "## Products and prices\n\nHelios Home sells home accessories in Egypt. Prices are in Egyptian pounds (EGP), include applicable taxes for this fictional scenario, and exclude delivery fees.\n\n- Aster Desk Lamp (ASTER-L01): EGP 850. LED desk lamp with three brightness levels, USB-C cable, and a 12-month limited warranty. Wall adapter is not included.\n- Thalassa Bottle (THAL-B02): EGP 420. Stainless-steel 750 ml bottle. Hand wash only. This is a personal-use item; opened bottles cannot be returned for change of mind.\n- Olive Notebook (OLIV-N03): EGP 160. A5 notebook with 160 lined pages and a recycled-paper cover. No electronic components.\n\nThis catalog does not provide live stock levels, discounts, or order status. Refer requests for these details to a support agent.\n\n"
+        },
+        {
+          "id": "01-products-section-3",
+          "title": "Helios Home — Product catalog / المنتجات والأسعار",
+          "text": "## المنتجات والأسعار\n\nهيليوس هوم متجر افتراضي للإكسسوارات المنزلية في مصر. الأسعار بالجنيه المصري ولا تشمل رسوم التوصيل.\n\n- مصباح أستر للمكتب (ASTER-L01): 850 جنيهًا، بثلاثة مستويات إضاءة وكابل USB-C وضمان محدود لمدة 12 شهرًا. محول الكهرباء غير مرفق.\n- زجاجة ثالاسا (THAL-B02): 420 جنيهًا، من الاستانلس ستيل بسعة 750 مل. تُغسل يدويًا فقط. لا تُقبل الزجاجة المفتوحة للإرجاع لمجرد تغيير الرأي.\n- دفتر أوليف (OLIV-N03): 160 جنيهًا، مقاس A5 ويحتوي على 160 صفحة مسطرة.\n\nالمستند لا يعرض المخزون الحالي أو الخصومات أو حالة الطلبات؛ يحتاج العميل إلى موظف دعم لهذه المعلومات.\n"
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "english",
+      "language": "en",
+      "label": "English · returns",
+      "question": "How many days after delivery can I request a change-of-mind return?",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "You must request a change-of-mind return within 14 calendar days of delivery.",
+          "evidence": [
+            {
+              "sourceId": "03-returns-section-2",
+              "quote": "Request a return within 14 calendar days of delivery."
+            }
+          ]
+        }
+      ],
+      "model": "gemini-3.1-flash-lite",
+      "savedAt": "2026-10-26T10:55:20.954278+00:00"
+    },
+    {
+      "id": "arabic",
+      "language": "ar_msa",
+      "label": "العربية · إرجاع منتج مفتوح",
+      "question": "هل يمكنني إرجاع مصباح أستر بعد فتحه لمجرد تغيير الرأي؟",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "لا يمكن إرجاع مصباح أستر بعد فتحه لمجرد تغيير الرأي.",
+          "evidence": [
+            {
+              "sourceId": "03-returns-section-5",
+              "quote": "لا يمكن إرجاع مصباح أستر أو زجاجة ثالاسا بعد فتحهما لمجرد تغيير الرأي."
+            }
+          ]
+        }
+      ],
+      "model": "gemini-3.1-flash-lite",
+      "savedAt": "2026-10-26T10:55:32.701168+00:00"
+    },
+    {
+      "id": "egyptian",
+      "language": "ar_egy",
+      "label": "مصري · تأخر الأوردر",
+      "question": "لو الأوردر اتأخر أعمل إيه؟",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "المساعد لا يحدد ميعاد وصول فعلي من نفسه، بل يواصل مع الدعم برقم الأوردر للاستفسار عن حالة الشحنة مع شركة الشحن.",
+          "evidence": [
+            {
+              "sourceId": "02-shipping-section-5",
+              "quote": "ما عندوش وصول مباشر لتتبع الطلبات، وما يقدرش يحدد ميعاد وصول فعلي من نفسه."
+            }
+          ]
+        }
+      ],
+      "model": "qwen2.5:1.5b",
+      "savedAt": "2026-10-26T10:41:36.629211+00:00"
+    },
+    {
+      "id": "unsupported",
+      "language": "en",
+      "label": "Unsupported · live stock",
+      "question": "What is the live stock count for the Aster Desk Lamp right now?",
+      "status": "needs_human",
+      "claims": [],
+      "model": "gemini-3.1-flash-lite",
+      "savedAt": "2026-10-26T10:55:43.249237+00:00"
+    }
+  ],
+  "pilot": {
+    "runId": "c7b2ad2ed2ef4c4b88eb3135d3d32d55",
+    "completedAt": "2026-10-27T11:15:33.119083+00:00",
+    "corpusHash": "2cb1edc2e8ad1e3ee4b3c2b84875a794924676d34a5ccea056524b82a17b67b5",
+    "datasetFingerprint": "fd21f403c053c08fbcb14b039e783f545066a7f2e384506bf76dbd21fe13a6bd",
+    "samples": 18,
+    "answerable": 15,
+    "groups": 10,
+    "languages": {
+      "en": 8,
+      "ar_msa": 5,
+      "ar_egy": 5
+    },
+    "summary": {
+      "bm25": {
+        "query_count": 18,
+        "scored_count": 15,
+        "metrics": {
+          "recall_at_5": 0.7333333333333333,
+          "precision_at_5": 0.16,
+          "mrr_at_10": 0.6111111111111112,
+          "ndcg_at_5": 0.6147090060210334
+        },
+        "latency_median_ms": 8.495350019074976,
+        "latency_p95_ms": 15.19539998844266,
+        "languages": {
+          "en": {
+            "query_count": 8,
+            "scored_count": 7,
+            "metrics": {
+              "recall_at_5": 0.7142857142857143,
+              "precision_at_5": 0.17142857142857143,
+              "mrr_at_10": 0.6428571428571429,
+              "ndcg_at_5": 0.6029478700450717
+            },
+            "latency_median_ms": 8.414449985139072,
+            "latency_p95_ms": 15.19539998844266
+          },
+          "ar_msa": {
+            "query_count": 5,
+            "scored_count": 4,
+            "metrics": {
+              "recall_at_5": 0.75,
+              "precision_at_5": 0.15000000000000002,
+              "mrr_at_10": 0.75,
+              "ndcg_at_5": 0.75
+            },
+            "latency_median_ms": 8.538000052794814,
+            "latency_p95_ms": 9.458600077778101
+          },
+          "ar_egy": {
+            "query_count": 5,
+            "scored_count": 4,
+            "metrics": {
+              "recall_at_5": 0.75,
+              "precision_at_5": 0.15000000000000002,
+              "mrr_at_10": 0.41666666666666663,
+              "ndcg_at_5": 0.5
+            },
+            "latency_median_ms": 8.942099986597896,
+            "latency_p95_ms": 9.191700024530292
+          }
+        }
+      },
+      "dense": {
+        "query_count": 18,
+        "scored_count": 15,
+        "metrics": {
+          "recall_at_5": 0.7333333333333333,
+          "precision_at_5": 0.16,
+          "mrr_at_10": 0.7157407407407408,
+          "ndcg_at_5": 0.7087286502380972
+        },
+        "latency_median_ms": 2306.1127500841394,
+        "latency_p95_ms": 3073.0208999011666,
+        "languages": {
+          "en": {
+            "query_count": 8,
+            "scored_count": 7,
+            "metrics": {
+              "recall_at_5": 0.7142857142857143,
+              "precision_at_5": 0.17142857142857143,
+              "mrr_at_10": 0.7142857142857143,
+              "ndcg_at_5": 0.7142857142857143
+            },
+            "latency_median_ms": 2323.2857499970123,
+            "latency_p95_ms": 3073.0208999011666
+          },
+          "ar_msa": {
+            "query_count": 5,
+            "scored_count": 4,
+            "metrics": {
+              "recall_at_5": 0.75,
+              "precision_at_5": 0.15000000000000002,
+              "mrr_at_10": 0.78125,
+              "ndcg_at_5": 0.75
+            },
+            "latency_median_ms": 2307.9585002269596,
+            "latency_p95_ms": 2332.5624000281096
+          },
+          "ar_egy": {
+            "query_count": 5,
+            "scored_count": 4,
+            "metrics": {
+              "recall_at_5": 0.75,
+              "precision_at_5": 0.15000000000000002,
+              "mrr_at_10": 0.6527777777777778,
+              "ndcg_at_5": 0.6577324383928644
+            },
+            "latency_median_ms": 2253.363899886608,
+            "latency_p95_ms": 2550.071300007403
+          }
+        }
+      },
+      "hybrid": {
+        "query_count": 18,
+        "scored_count": 15,
+        "metrics": {
+          "recall_at_5": 0.7333333333333333,
+          "precision_at_5": 0.16,
+          "mrr_at_10": 0.7037037037037037,
+          "ndcg_at_5": 0.680653982759791
+        },
+        "latency_median_ms": 2353.583899908699,
+        "latency_p95_ms": 3245.0814999174327,
+        "languages": {
+          "en": {
+            "query_count": 8,
+            "scored_count": 7,
+            "metrics": {
+              "recall_at_5": 0.7142857142857143,
+              "precision_at_5": 0.17142857142857143,
+              "mrr_at_10": 0.7142857142857143,
+              "ndcg_at_5": 0.6728299630566951
+            },
+            "latency_median_ms": 2333.0784999998286,
+            "latency_p95_ms": 3245.0814999174327
+          },
+          "ar_msa": {
+            "query_count": 5,
+            "scored_count": 4,
+            "metrics": {
+              "recall_at_5": 0.75,
+              "precision_at_5": 0.15000000000000002,
+              "mrr_at_10": 0.7777777777777778,
+              "ndcg_at_5": 0.75
+            },
+            "latency_median_ms": 2279.967100126669,
+            "latency_p95_ms": 2447.0393999945372
+          },
+          "ar_egy": {
+            "query_count": 5,
+            "scored_count": 4,
+            "metrics": {
+              "recall_at_5": 0.75,
+              "precision_at_5": 0.15000000000000002,
+              "mrr_at_10": 0.6111111111111112,
+              "ndcg_at_5": 0.625
+            },
+            "latency_median_ms": 2411.1663999501616,
+            "latency_p95_ms": 2585.3643000591546
+          }
+        }
+      }
+    },
+    "limitations": [
+      "Development set; no held-out test run or quality guarantee.",
+      "Review status is a recorded personal attestation, not proof of human identity.",
+      "Unlabelled chunks are treated as nonrelevant; incomplete positive labels bias metrics.",
+      "Single pass with no confidence intervals; sample counts and language breakdowns must accompany numbers.",
+      "Latency includes integrity checks and cold embedding startup; other machine activity can affect results.",
+      "Unanswerable questions are excluded from retrieval-quality metrics; retrieval is not an abstention test.",
+      "No generation, LLM judge, reranker, or human-handoff quality evaluation was run."
+    ],
+    "failures": [
+      {
+        "question": "Anonymized ar_msa / paraphrase reviewed case",
+        "method": "bm25",
+        "recall": 0.0
+      },
+      {
+        "question": "Anonymized ar_msa / paraphrase reviewed case",
+        "method": "dense",
+        "recall": 0.0
+      },
+      {
+        "question": "Anonymized ar_msa / paraphrase reviewed case",
+        "method": "hybrid",
+        "recall": 0.0
+      },
+      {
+        "question": "Anonymized ar_egy / paraphrase reviewed case",
+        "method": "bm25",
+        "recall": 0.0
+      },
+      {
+        "question": "Anonymized ar_egy / paraphrase reviewed case",
+        "method": "dense",
+        "recall": 0.0
+      },
+      {
+        "question": "Anonymized ar_egy / paraphrase reviewed case",
+        "method": "hybrid",
+        "recall": 0.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+/* Public-domain engravings, layered as lightweight 2D scenery. */
+.module-header{min-height:310px;isolation:isolate;background:radial-gradient(ellipse at 79% 55%,#72593930,transparent 55%),linear-gradient(110deg,#111c28,#0c1420)}
+.module-header .module-copy{max-width:62%;z-index:2;padding-block:12px}
+.module-header .module-copy h1{font-size:clamp(35px,4.1vw,56px)}
+.module-header .module-crest{display:none}
+.mythic-art{--drift:0px;position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;contain:paint;mix-blend-mode:screen}
+.mythic-art img{position:absolute;object-fit:contain;filter:grayscale(1) contrast(1.45) invert(1) sepia(.65) saturate(.65);mix-blend-mode:screen;user-select:none}
+.art-athena{height:375px;width:183px;right:8%;top:20px;opacity:.76;transform:translate3d(0,calc(var(--drift) * -1),0) rotate(-5deg);mask-image:linear-gradient(#000 75%,transparent)}
+.art-temple{width:410px;height:343px;right:-80px;top:70px;opacity:.19;transform:translate3d(0,var(--drift),0);mask-image:linear-gradient(90deg,transparent,#000 30%,#000 80%,transparent)}
+.art-orbit{position:absolute;width:290px;height:290px;right:4%;top:30px;border:1px solid #d3b37a38;border-radius:50%;transform:translate3d(0,calc(var(--drift) * .4),0);box-shadow:0 0 70px #bb8d3b08,inset 0 0 70px #bb8d3b08}
+.art-orbit-inner{width:245px;height:245px;right:calc(4% + 22px);top:52px;border-style:dashed;border-color:#d3b37a20}
+.art-star{position:absolute;color:#dbc38d;font-size:34px;transform:translate3d(0,calc(var(--drift) * -.6),0)}
+.art-star-one{right:31%;top:52px}.art-star-two{right:5%;top:205px;font-size:16px;opacity:.65}
+.art-horizon{display:none}
+.art-entered .art-athena{animation:art-arrive 850ms ease-out both}
+@keyframes art-arrive{from{opacity:0;translate:18px 14px}to{opacity:.76;translate:0 0}}
+.sanctuary-coda{position:relative;isolation:isolate;min-height:240px;margin-top:40px;border-top:1px solid #c2a56f35;border-bottom:1px solid #c2a56f25;background:radial-gradient(ellipse at 75% 90%,#71563720,transparent 65%);overflow:hidden}
+.sanctuary-coda>div:last-child{position:relative;z-index:1;padding:38px 28px;max-width:65%}
+.sanctuary-coda .eyebrow{font-size:9px;letter-spacing:2.5px;color:#c8ad78}
+.coda-title{font:34px/1.3 Georgia,serif;margin:12px 0;color:#e7dfcf}.coda-title em{font-weight:normal;color:#c9b78e}
+.sanctuary-coda>div:last-child>span{font-size:8px;letter-spacing:2px;color:#98a6b5}
+.mythic-art-closing .art-athena{display:none}.mythic-art-closing .art-temple{width:440px;height:368px;right:-15px;top:-55px;opacity:.36;mask-image:linear-gradient(90deg,transparent,#000 35%)}
+.mythic-art-closing .art-orbit{right:7%;top:-70px;width:380px;height:380px}.mythic-art-closing .art-orbit-inner{display:none}
+.art-credits{position:relative;max-width:390px}.art-credits summary{cursor:pointer;min-height:32px;display:flex;align-items:center;text-decoration:underline;text-underline-offset:4px}.art-credits p{font-size:11px;line-height:1.8}.art-credits a{color:#d3b37a;text-decoration:underline}
+@media(max-width:960px){.art-athena{right:4%;opacity:.65}.art-temple{right:-150px}.module-header .module-copy{max-width:65%}.art-star-one{right:35%}.module-header{min-height:280px}}
+@media(max-width:700px){.module-header{min-height:265px;padding:26px 20px}.module-header .module-copy{max-width:78%;padding:0}.module-header .module-copy h1{font-size:35px}.module-header .module-copy>p:last-child{max-width:240px;text-shadow:0 1px 5px #080e16}.art-athena{right:-36px;top:18px;height:300px;width:146px;opacity:.28}.art-entered .art-athena{animation:none}.art-temple{right:-160px;opacity:.12}.art-orbit{right:-130px;top:22px}.art-orbit-inner{right:-108px;top:44px}.art-star-one{right:12%;top:18px;font-size:22px}.art-star-two{display:none}.art-horizon{width:100%}.sanctuary-coda{margin-top:24px;min-height:210px}.sanctuary-coda>div:last-child{padding:28px 18px;max-width:85%}.coda-title{font-size:28px}.sanctuary-coda .eyebrow{font-size:8px}.mythic-art-closing .art-temple{right:-160px;opacity:.2}.art-credits{max-width:100%}}
+.art-oracle .art-athena,.art-dispatch .art-athena{width:250px;right:5%;height:350px;top:10px;transform:translate3d(0,calc(var(--drift) * -1),0)}
+.art-tribunal .art-athena{width:300px;height:300px;right:3%;top:20px;transform:translate3d(0,calc(var(--drift) * -1),0)}
+.mythic-art-closing .art-athena{display:block;width:220px;height:270px;right:7%;top:10px;opacity:.35;animation:none}
+@media(max-width:700px){.art-oracle .art-athena,.art-dispatch .art-athena{width:180px;height:270px;right:-30px;top:18px}.art-tribunal .art-athena{width:210px;height:210px;right:-64px;top:42px}.mythic-art-closing .art-athena{right:-30px;width:180px;height:240px;opacity:.2}}
+/* A separate motion layer preserves the figure's scroll-parallax transform. */
+.art-figure-motion{position:absolute;inset:0;transform-origin:85% 70%;transition:transform 650ms cubic-bezier(.2,.8,.2,1)}
+.art-oracle{--figure-lean:1.6deg}.art-library{--figure-lean:-1.5deg}.art-tribunal{--figure-lean:.8deg}.art-dispatch{--figure-lean:-2deg}
+.mythic-art .art-orbit{transition:rotate 900ms ease,box-shadow 600ms ease,border-color 600ms ease}
+.mythic-art .art-star{transition:rotate 800ms ease,scale 600ms ease,color 600ms ease}
+@media(hover:hover) and (pointer:fine){
+  :is(.module-header,.sanctuary-coda):hover .art-figure-motion{transform:translateY(-8px) rotate(var(--figure-lean)) scale(1.035)}
+  :is(.module-header,.sanctuary-coda):hover .art-orbit{rotate:14deg;border-color:#e1c68d70;box-shadow:0 0 70px #c3a16c14,inset 0 0 55px #c3a16c12}
+  :is(.module-header,.sanctuary-coda):hover .art-orbit-inner{rotate:-20deg}
+  :is(.module-header,.sanctuary-coda):hover .art-star{rotate:35deg;scale:1.15;color:#f4dfaf}
+}
+@media(prefers-reduced-motion:reduce){.mythic-art *{animation:none!important;transition:none!important;transform:none!important;translate:none!important;rotate:none!important;scale:none!important}}

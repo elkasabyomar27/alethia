@@ -1,0 +1,2146 @@
+{
+  "dataset_id": "helios-candidates-v3",
+  "description": "120 agent-authored development candidates in 40 trilingual intent groups. Seed references are not human review attestations. Reserved test questions are excluded from public source.",
+  "examples": [
+    {
+      "id": "returns-en",
+      "group_id": "return-window",
+      "split": "dev",
+      "question": "How many days after delivery can I request a change-of-mind return?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "Request it within 14 calendar days of delivery; eligibility conditions still apply.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Request a return within 14 calendar days of delivery.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "returns-msa",
+      "group_id": "return-window",
+      "split": "dev",
+      "question": "ما هي مدة الإرجاع بسبب تغيير الرأي؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "خلال 14 يومًا تقويميًا من الاستلام، مع مراعاة شروط الاستخدام والعبوة والملحقات وإثبات الشراء.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "يمكن طلب الإرجاع بسبب تغيير الرأي خلال 14 يومًا تقويميًا من الاستلام، بشرط أن يكون المنتج غير مستخدم وفي عبوته الأصلية ومعه الملحقات وإثبات الشراء.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "returns-egy",
+      "group_id": "return-window",
+      "split": "dev",
+      "question": "أقدر أرجّع الحاجة خلال كام يوم لو غيرت رأيي؟",
+      "language": "ar_egy",
+      "category": "paraphrase",
+      "reference_answer": "خلال 14 يومًا تقويميًا من الاستلام، بشرط استيفاء شروط الإرجاع المذكورة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "يمكن طلب الإرجاع بسبب تغيير الرأي خلال 14 يومًا تقويميًا من الاستلام، بشرط أن يكون المنتج غير مستخدم وفي عبوته الأصلية ومعه الملحقات وإثبات الشراء.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "shipping-cairo",
+      "group_id": "shipping-cairo",
+      "split": "dev",
+      "question": "What are the delivery time and shipping fee for Cairo?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "2–4 business days after dispatch; EGP 60. Estimates are not guaranteed arrival dates.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Cairo and Giza | 2–4 business days | EGP 60 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Estimates are not guaranteed arrival dates.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "delayed-egy",
+      "group_id": "delayed-order",
+      "split": "dev",
+      "question": "لو الأوردر اتأخر أعمل إيه؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "لو تجاوز آخر يوم في المدة المتوقعة، العميل يتواصل مع الدعم برقم الأوردر كي يراجع الموظف حالة الشحنة. المساعد لا يتتبع الطلب ولا يتواصل مع شركة الشحن بنفسه.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "لو الأوردر اتأخر عن آخر يوم في المدة المتوقعة، تواصل مع الدعم برقم الأوردر عشان الموظف يراجع حالة الشحنة مع شركة الشحن.",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "المساعد ما عندوش وصول مباشر لتتبع الطلبات، وما يقدرش يحدد ميعاد وصول فعلي من نفسه.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-msa",
+      "group_id": "opened-aster",
+      "split": "dev",
+      "question": "هل يمكنني إرجاع مصباح أستر بعد فتحه لمجرد تغيير الرأي؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "لا يمكن إرجاع مصباح أستر المفتوح لمجرد تغيير الرأي؛ حالات العيب لها إجراءات منفصلة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "لا يمكن إرجاع مصباح أستر أو زجاجة ثالاسا بعد فتحهما لمجرد تغيير الرأي.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "فتح منتج معيب لا يمنع تقديم بلاغ عن العيب.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "warranty-en",
+      "group_id": "warranty-window",
+      "split": "dev",
+      "question": "How long is the Aster Desk Lamp warranty?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "A limited 12-month warranty from purchase covering manufacturing defects, with proof of purchase.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "The Aster Desk Lamp carries a limited 12-month warranty from the purchase date covering manufacturing defects.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "refund-en",
+      "group_id": "refund-window",
+      "split": "dev",
+      "question": "When is an approved refund processed?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "To the original payment method within 5–10 business days after the returned item passes inspection, not after first contact.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Approved refunds are issued to the original payment method within 5–10 business days after the returned item passes inspection.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "This is not a promise of a refund within 5–10 days of first contacting support.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "dispatch-and-return",
+      "group_id": "dispatch-return-combination",
+      "split": "dev",
+      "question": "When do orders leave the warehouse, and how long after delivery can I request a change-of-mind return?",
+      "language": "en",
+      "category": "multi_document",
+      "reference_answer": "Orders normally leave within 1–2 business days after confirmation; change-of-mind return requests are within 14 calendar days after delivery, subject to eligibility.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "Orders normally leave the warehouse within 1–2 business days after order confirmation.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "Request a return within 14 calendar days of delivery.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "stock-en",
+      "group_id": "live-stock",
+      "split": "dev",
+      "question": "What is the live stock count for the Aster Desk Lamp right now?",
+      "language": "en",
+      "category": "unanswerable",
+      "reference_answer": "The documents do not provide live inventory. Do not invent a count; ask a human to check.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "tracking-egy",
+      "group_id": "live-tracking",
+      "split": "dev",
+      "question": "الأوردر بتاعي رقمه 12345 هيوصل الساعة كام النهارده؟",
+      "language": "ar_egy",
+      "category": "unanswerable",
+      "reference_answer": "لا يوجد وصول لتتبع طلب فردي أو تحديد موعد وصول فعلي. يلزم موظف الدعم.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "ambiguous-msa",
+      "group_id": "unspecified-return",
+      "split": "dev",
+      "question": "هل يمكنني إرجاعه؟",
+      "language": "ar_msa",
+      "category": "ambiguous",
+      "reference_answer": "اطلب تحديد المنتج وحالته وسبب الإرجاع قبل إعطاء حكم خاص به.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "shipping-cairo-ar-msa",
+      "group_id": "shipping-cairo",
+      "split": "dev",
+      "question": "ما هي مدة توصيل الطلب إلى القاهرة وما رسومه؟",
+      "language": "ar_msa",
+      "category": "paraphrase",
+      "reference_answer": "من يومين إلى 4 أيام عمل بعد الشحن مقابل 60 جنيهًا؛ المواعيد تقديرية وليست مضمونة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Cairo and Giza | 2–4 business days | EGP 60 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Estimates are not guaranteed arrival dates.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "shipping-cairo-ar-egy",
+      "group_id": "shipping-cairo",
+      "split": "dev",
+      "question": "الشحن للقاهرة بياخد كام يوم وبكام؟",
+      "language": "ar_egy",
+      "category": "paraphrase",
+      "reference_answer": "من يومين لـ4 أيام عمل بعد خروج الطلب، بـ60 جنيه. دي مدة تقديرية مش ميعاد مضمون.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Cairo and Giza | 2–4 business days | EGP 60 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Estimates are not guaranteed arrival dates.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "delayed-order-en",
+      "group_id": "delayed-order",
+      "split": "dev",
+      "question": "The delivery estimate has passed. What should I do?",
+      "language": "en",
+      "category": "paraphrase",
+      "reference_answer": "Contact support with the order number so an agent can check the courier; the assistant cannot track orders or invent an arrival time.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "لو الأوردر اتأخر عن آخر يوم في المدة المتوقعة، تواصل مع الدعم برقم الأوردر عشان الموظف يراجع حالة الشحنة مع شركة الشحن.",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "المساعد ما عندوش وصول مباشر لتتبع الطلبات، وما يقدرش يحدد ميعاد وصول فعلي من نفسه.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "delayed-order-ar-msa",
+      "group_id": "delayed-order",
+      "split": "dev",
+      "question": "ماذا أفعل إذا تجاوز الطلب آخر يوم في مدة التوصيل المتوقعة؟",
+      "language": "ar_msa",
+      "category": "paraphrase",
+      "reference_answer": "تواصل مع الدعم برقم الطلب لمراجعة حالة الشحنة؛ لا يستطيع المساعد تتبع الطلب أو تحديد موعد وصول فعلي.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "لو الأوردر اتأخر عن آخر يوم في المدة المتوقعة، تواصل مع الدعم برقم الأوردر عشان الموظف يراجع حالة الشحنة مع شركة الشحن.",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "المساعد ما عندوش وصول مباشر لتتبع الطلبات، وما يقدرش يحدد ميعاد وصول فعلي من نفسه.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-aster-en",
+      "group_id": "opened-aster",
+      "split": "dev",
+      "question": "Can I return an opened Aster lamp just because I changed my mind?",
+      "language": "en",
+      "category": "paraphrase",
+      "reference_answer": "No change-of-mind return for an opened Aster lamp. Defect claims follow a separate procedure.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "لا يمكن إرجاع مصباح أستر أو زجاجة ثالاسا بعد فتحهما لمجرد تغيير الرأي.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "فتح منتج معيب لا يمنع تقديم بلاغ عن العيب.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-aster-ar-egy",
+      "group_id": "opened-aster",
+      "split": "dev",
+      "question": "فتحت مصباح أستر وبعدين غيرت رأيي، ينفع أرجعه؟",
+      "language": "ar_egy",
+      "category": "paraphrase",
+      "reference_answer": "المصباح المفتوح ما ينفعش يرجع لمجرد تغيير الرأي؛ لو فيه عيب اتبع إجراءات العيب المنفصلة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "لا يمكن إرجاع مصباح أستر أو زجاجة ثالاسا بعد فتحهما لمجرد تغيير الرأي.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "فتح منتج معيب لا يمنع تقديم بلاغ عن العيب.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "warranty-window-ar-msa",
+      "group_id": "warranty-window",
+      "split": "dev",
+      "question": "ما مدة ضمان مصباح أستر ومتى تبدأ؟",
+      "language": "ar_msa",
+      "category": "paraphrase",
+      "reference_answer": "ضمان محدود لمدة 12 شهرًا من تاريخ الشراء ضد عيوب التصنيع؛ احتفظ بإثبات الشراء.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "The Aster Desk Lamp carries a limited 12-month warranty from the purchase date covering manufacturing defects.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "warranty-window-ar-egy",
+      "group_id": "warranty-window",
+      "split": "dev",
+      "question": "ضمان مصباح أستر كام شهر وبيبدأ من إمتى؟",
+      "language": "ar_egy",
+      "category": "paraphrase",
+      "reference_answer": "12 شهر من تاريخ الشراء لعيوب التصنيع، مع الاحتفاظ بإثبات الشراء.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "The Aster Desk Lamp carries a limited 12-month warranty from the purchase date covering manufacturing defects.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "refund-window-ar-msa",
+      "group_id": "refund-window",
+      "split": "dev",
+      "question": "متى ينفذ الاسترداد المعتمد وإلى أي وسيلة دفع؟",
+      "language": "ar_msa",
+      "category": "paraphrase",
+      "reference_answer": "إلى وسيلة الدفع الأصلية خلال 5 إلى 10 أيام عمل بعد فحص المرتجع والموافقة عليه، وليس من أول اتصال بالدعم.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Approved refunds are issued to the original payment method within 5–10 business days after the returned item passes inspection.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "This is not a promise of a refund within 5–10 days of first contacting support.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "refund-window-ar-egy",
+      "group_id": "refund-window",
+      "split": "dev",
+      "question": "الفلوس بترجع فين وإمتى بعد الموافقة على الاسترجاع؟",
+      "language": "ar_egy",
+      "category": "paraphrase",
+      "reference_answer": "لنفس وسيلة الدفع خلال 5 لـ10 أيام عمل بعد فحص المرتجع والموافقة، مش من أول كلام مع الدعم.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Approved refunds are issued to the original payment method within 5–10 business days after the returned item passes inspection.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "This is not a promise of a refund within 5–10 days of first contacting support.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "dispatch-return-combination-ar-msa",
+      "group_id": "dispatch-return-combination",
+      "split": "dev",
+      "question": "متى يغادر الطلب المخزن وما مهلة طلب إرجاعه بعد التسليم؟",
+      "language": "ar_msa",
+      "category": "multi_document",
+      "reference_answer": "عادة خلال يوم إلى يومي عمل بعد التأكيد؛ طلب إرجاع تغيير الرأي خلال 14 يومًا تقويميًا من التسليم مع شروط الأهلية.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "Orders normally leave the warehouse within 1–2 business days after order confirmation.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "Request a return within 14 calendar days of delivery.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "dispatch-return-combination-ar-egy",
+      "group_id": "dispatch-return-combination",
+      "split": "dev",
+      "question": "الأوردر بيطلع من المخزن إمتى وأقدر أطلب إرجاعه خلال كام يوم من الاستلام؟",
+      "language": "ar_egy",
+      "category": "multi_document",
+      "reference_answer": "عادة يوم ليومين عمل بعد التأكيد؛ طلب الإرجاع لتغيير الرأي خلال 14 يوم تقويمي من الاستلام مع شروط الإرجاع.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "Orders normally leave the warehouse within 1–2 business days after order confirmation.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "Request a return within 14 calendar days of delivery.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "live-stock-ar-msa",
+      "group_id": "live-stock",
+      "split": "dev",
+      "question": "كم عدد مصابيح أستر المتاحة الآن في المخزون؟",
+      "language": "ar_msa",
+      "category": "unanswerable",
+      "reference_answer": "لا تتضمن المستندات مخزونًا مباشرًا. اعرض مراجعة موظف ولا تخترع عددًا.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "live-stock-ar-egy",
+      "group_id": "live-stock",
+      "split": "dev",
+      "question": "فاضل كام مصباح أستر في المخزن دلوقتي؟",
+      "language": "ar_egy",
+      "category": "unanswerable",
+      "reference_answer": "المستندات ما فيهاش مخزون لحظي؛ محتاج موظف يراجع، من غير تخمين عدد.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "live-tracking-en",
+      "group_id": "live-tracking",
+      "split": "dev",
+      "question": "At what exact time today will my order 12345 arrive?",
+      "language": "en",
+      "category": "unanswerable",
+      "reference_answer": "No live order tracking or exact arrival time is available. Offer human review rather than a fabricated time.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "live-tracking-ar-msa",
+      "group_id": "live-tracking",
+      "split": "dev",
+      "question": "في أي ساعة اليوم سيصل طلبي رقم 12345؟",
+      "language": "ar_msa",
+      "category": "unanswerable",
+      "reference_answer": "لا توجد بيانات تتبع مباشرة أو موعد وصول فعلي لهذا الطلب. اعرض مراجعة بشرية.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "unspecified-return-en",
+      "group_id": "unspecified-return",
+      "split": "dev",
+      "question": "Can I return it?",
+      "language": "en",
+      "category": "ambiguous",
+      "reference_answer": "Ask which product, its condition, and the reason for return before deciding eligibility.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "unspecified-return-ar-egy",
+      "group_id": "unspecified-return",
+      "split": "dev",
+      "question": "ينفع أرجعه؟",
+      "language": "ar_egy",
+      "category": "ambiguous",
+      "reference_answer": "اسأل عن المنتج وحالته وسبب الإرجاع قبل ما تحدد الأهلية.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "lamp-adapter-en",
+      "group_id": "lamp-adapter",
+      "split": "dev",
+      "question": "Does the Aster Desk Lamp include a wall adapter?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "No wall adapter is included.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Wall adapter is not included.",
+          "grade": 1
+        },
+        {
+          "document": "01-products.md",
+          "quote": "محول الكهرباء غير مرفق.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-adapter-ar-msa",
+      "group_id": "lamp-adapter",
+      "split": "dev",
+      "question": "هل يأتي مصباح أستر مع محول كهرباء؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "محول الكهرباء غير مرفق.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Wall adapter is not included.",
+          "grade": 1
+        },
+        {
+          "document": "01-products.md",
+          "quote": "محول الكهرباء غير مرفق.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-adapter-ar-egy",
+      "group_id": "lamp-adapter",
+      "split": "dev",
+      "question": "مصباح أستر بييجي معاه محول كهربا؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "لأ، المحول مش مرفق.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Wall adapter is not included.",
+          "grade": 1
+        },
+        {
+          "document": "01-products.md",
+          "quote": "محول الكهرباء غير مرفق.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "damage-window-en",
+      "group_id": "damage-window",
+      "split": "dev",
+      "question": "How soon should I report an item damaged on arrival?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "Report within 48 hours of delivery.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Report damage or a defect within 48 hours of delivery.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "إذا وصل المنتج تالفًا أو به عيب، يُرجى الإبلاغ خلال 48 ساعة",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "damage-window-ar-msa",
+      "group_id": "damage-window",
+      "split": "dev",
+      "question": "ما مهلة الإبلاغ عن تلف المنتج عند الاستلام؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "يبلغ خلال 48 ساعة من التسليم.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Report damage or a defect within 48 hours of delivery.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "إذا وصل المنتج تالفًا أو به عيب، يُرجى الإبلاغ خلال 48 ساعة",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "damage-window-ar-egy",
+      "group_id": "damage-window",
+      "split": "dev",
+      "question": "لو الحاجة وصلت بايظة أبلغ خلال قد إيه؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "بلغ خلال 48 ساعة من الاستلام.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Report damage or a defect within 48 hours of delivery.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "إذا وصل المنتج تالفًا أو به عيب، يُرجى الإبلاغ خلال 48 ساعة",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "damage-evidence-en",
+      "group_id": "damage-evidence",
+      "split": "dev",
+      "question": "What evidence is needed for arrival damage, and should I ship the item back immediately?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "Provide order number, description and clear item/packaging photos. Wait for support return instructions.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Provide the order number, a description, and clear photos of the item and packaging. Do not send the item back before support provides return instructions.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "مع رقم الطلب ووصف المشكلة وصور واضحة للمنتج والتغليف، وانتظار تعليمات الدعم قبل إعادته.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "damage-evidence-ar-msa",
+      "group_id": "damage-evidence",
+      "split": "dev",
+      "question": "ما المطلوب لبلاغ تلف عند الاستلام وهل أعيد المنتج فورًا؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "رقم الطلب ووصف المشكلة وصور واضحة للمنتج والتغليف؛ انتظر تعليمات الدعم قبل الإعادة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Provide the order number, a description, and clear photos of the item and packaging. Do not send the item back before support provides return instructions.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "مع رقم الطلب ووصف المشكلة وصور واضحة للمنتج والتغليف، وانتظار تعليمات الدعم قبل إعادته.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "damage-evidence-ar-egy",
+      "group_id": "damage-evidence",
+      "split": "dev",
+      "question": "لو الحاجة وصلت تالفة أبعت إيه وأرجعها فورًا ولا أستنى؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "رقم الأوردر ووصف وصور واضحة للحاجة والتغليف؛ استنى تعليمات الدعم قبل ما تبعتها.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Provide the order number, a description, and clear photos of the item and packaging. Do not send the item back before support provides return instructions.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "مع رقم الطلب ووصف المشكلة وصور واضحة للمنتج والتغليف، وانتظار تعليمات الدعم قبل إعادته.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "late-damage-review-en",
+      "group_id": "late-damage-review",
+      "split": "dev",
+      "question": "Is a damage claim automatically rejected after 48 hours?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "No automatic approval or rejection; a support agent must review the case.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "If more than 48 hours have passed, a support agent must review the case; the assistant must not automatically approve or deny it.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "الحالات بعد 48 ساعة تحتاج مراجعة موظف دعم ولا تُرفض تلقائيًا.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "late-damage-review-ar-msa",
+      "group_id": "late-damage-review",
+      "split": "dev",
+      "question": "هل يرفض بلاغ التلف تلقائيًا إذا مر أكثر من 48 ساعة؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "تحتاج الحالة مراجعة موظف ولا تقبل أو ترفض تلقائيًا.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "If more than 48 hours have passed, a support agent must review the case; the assistant must not automatically approve or deny it.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "الحالات بعد 48 ساعة تحتاج مراجعة موظف دعم ولا تُرفض تلقائيًا.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "late-damage-review-ar-egy",
+      "group_id": "late-damage-review",
+      "split": "dev",
+      "question": "عدى أكتر من 48 ساعة، بلاغ التلف بيترفض تلقائي؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "محتاج موظف يراجع، من غير قبول أو رفض تلقائي.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "If more than 48 hours have passed, a support agent must review the case; the assistant must not automatically approve or deny it.",
+          "grade": 1
+        },
+        {
+          "document": "03-returns.md",
+          "quote": "الحالات بعد 48 ساعة تحتاج مراجعة موظف دعم ولا تُرفض تلقائيًا.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "cancel-order-en",
+      "group_id": "cancel-order",
+      "split": "dev",
+      "question": "Can the assistant cancel my order before dispatch?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "Contact support with the order number before dispatch; an agent checks the actual state. The assistant cannot modify orders.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "05-faq.md",
+          "quote": "Contact support with the order number before dispatch. Changes and cancellation depend on a support agent checking the actual order state. The assistant cannot modify orders.",
+          "grade": 1
+        },
+        {
+          "document": "05-faq.md",
+          "quote": "تواصل مع الدعم برقم الطلب قبل الشحن. يراجع الموظف حالة الطلب الفعلية لتحديد إمكانية التعديل أو الإلغاء. المساعد لا يستطيع تعديل الطلبات.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "cancel-order-ar-msa",
+      "group_id": "cancel-order",
+      "split": "dev",
+      "question": "هل يستطيع المساعد إلغاء طلبي قبل الشحن؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "تواصل مع الدعم برقم الطلب قبل الشحن؛ يراجع الموظف الحالة الفعلية ولا يستطيع المساعد تعديل الطلب.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "05-faq.md",
+          "quote": "Contact support with the order number before dispatch. Changes and cancellation depend on a support agent checking the actual order state. The assistant cannot modify orders.",
+          "grade": 1
+        },
+        {
+          "document": "05-faq.md",
+          "quote": "تواصل مع الدعم برقم الطلب قبل الشحن. يراجع الموظف حالة الطلب الفعلية لتحديد إمكانية التعديل أو الإلغاء. المساعد لا يستطيع تعديل الطلبات.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "cancel-order-ar-egy",
+      "group_id": "cancel-order",
+      "split": "dev",
+      "question": "ينفع المساعد يلغي الأوردر قبل ما يتشحن؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "كلم الدعم برقم الأوردر قبل الشحن؛ الموظف يراجع حالته والمساعد ما يقدرش يعدله.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "05-faq.md",
+          "quote": "Contact support with the order number before dispatch. Changes and cancellation depend on a support agent checking the actual order state. The assistant cannot modify orders.",
+          "grade": 1
+        },
+        {
+          "document": "05-faq.md",
+          "quote": "تواصل مع الدعم برقم الطلب قبل الشحن. يراجع الموظف حالة الطلب الفعلية لتحديد إمكانية التعديل أو الإلغاء. المساعد لا يستطيع تعديل الطلبات.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "return-fee-amount-en",
+      "group_id": "return-fee-amount",
+      "split": "dev",
+      "question": "Exactly how much is the change-of-mind return shipping fee?",
+      "language": "en",
+      "category": "unanswerable",
+      "reference_answer": "The policy gives no fixed return-shipping amount. Explain the missing amount and offer human review; do not reuse outbound delivery fees.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "return-fee-amount-ar-msa",
+      "group_id": "return-fee-amount",
+      "split": "dev",
+      "question": "ما المبلغ المحدد لشحن إرجاع تغيير الرأي؟",
+      "language": "ar_msa",
+      "category": "unanswerable",
+      "reference_answer": "لا تحدد السياسة مبلغًا ثابتًا لشحن الإرجاع. وضح النقص واعرض مراجعة بشرية ولا تستخدم رسوم توصيل الطلب بديلًا.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "return-fee-amount-ar-egy",
+      "group_id": "return-fee-amount",
+      "split": "dev",
+      "question": "شحن الإرجاع لتغيير الرأي بكام بالظبط؟",
+      "language": "ar_egy",
+      "category": "unanswerable",
+      "reference_answer": "مفيش مبلغ ثابت لشحن الإرجاع في السياسة؛ وضح ده واعرض مراجعة موظف، من غير استخدام رسوم التوصيل بدلها.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "lamp-price-en",
+      "group_id": "lamp-price",
+      "split": "dev",
+      "question": "What is the listed price and SKU of the Aster Desk Lamp?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "EGP 850; ASTER-L01.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Aster Desk Lamp (ASTER-L01): EGP 850.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-price-ar-msa",
+      "group_id": "lamp-price",
+      "split": "dev",
+      "question": "ما سعر مصباح أستر ورمز المنتج في الكتالوج؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "850 جنيهًا؛ ASTER-L01.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Aster Desk Lamp (ASTER-L01): EGP 850.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-price-ar-egy",
+      "group_id": "lamp-price",
+      "split": "dev",
+      "question": "مصباح أستر سعره كام وكود المنتج إيه؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "850 جنيه وكوده ASTER-L01.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Aster Desk Lamp (ASTER-L01): EGP 850.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-brightness-en",
+      "group_id": "lamp-brightness",
+      "split": "dev",
+      "question": "How many brightness settings does the Aster lamp have?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "Three brightness levels.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "LED desk lamp with three brightness levels",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-brightness-ar-msa",
+      "group_id": "lamp-brightness",
+      "split": "dev",
+      "question": "كم مستوى إضاءة يوفر مصباح أستر؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "ثلاثة مستويات إضاءة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "LED desk lamp with three brightness levels",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-brightness-ar-egy",
+      "group_id": "lamp-brightness",
+      "split": "dev",
+      "question": "مصباح أستر فيه كام درجة إضاءة؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "3 درجات إضاءة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "LED desk lamp with three brightness levels",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-cable-en",
+      "group_id": "lamp-cable",
+      "split": "dev",
+      "question": "What type of cable comes with the Aster lamp?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "A USB-C cable.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "LED desk lamp with three brightness levels, USB-C cable, and a 12-month limited warranty.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-cable-ar-msa",
+      "group_id": "lamp-cable",
+      "split": "dev",
+      "question": "ما نوع الكابل المرفق بمصباح أستر؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "كابل USB-C.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "LED desk lamp with three brightness levels, USB-C cable, and a 12-month limited warranty.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "lamp-cable-ar-egy",
+      "group_id": "lamp-cable",
+      "split": "dev",
+      "question": "الكابل اللي مع مصباح أستر نوعه إيه؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "كابل USB-C.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "LED desk lamp with three brightness levels, USB-C cable, and a 12-month limited warranty.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "catalog-price-basis-en",
+      "group_id": "catalog-price-basis",
+      "split": "dev",
+      "question": "Are catalog prices in EGP, and do they include tax and delivery?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "EGP, including applicable fictional taxes but excluding delivery fees.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Prices are in Egyptian pounds (EGP), include applicable taxes for this fictional scenario, and exclude delivery fees.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "catalog-price-basis-ar-msa",
+      "group_id": "catalog-price-basis",
+      "split": "dev",
+      "question": "هل أسعار الكتالوج بالجنيه المصري وتشمل الضرائب والتوصيل؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "بالجنيه المصري وتشمل الضرائب المطبقة في المثال الافتراضي ولا تشمل رسوم التوصيل.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Prices are in Egyptian pounds (EGP), include applicable taxes for this fictional scenario, and exclude delivery fees.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "catalog-price-basis-ar-egy",
+      "group_id": "catalog-price-basis",
+      "split": "dev",
+      "question": "أسعار الكتالوج بالجنيه؟ شاملة الضريبة والشحن ولا لأ؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "بالجنيه المصري وشاملة ضرايب المثال الافتراضي، بس الشحن مش داخل فيها.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "01-products.md",
+          "quote": "Prices are in Egyptian pounds (EGP), include applicable taxes for this fictional scenario, and exclude delivery fees.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "shipping-alexandria-en",
+      "group_id": "shipping-alexandria",
+      "split": "dev",
+      "question": "What are the delivery estimate and fee for Alexandria, and when does the estimate start?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "3–5 business days after dispatch; EGP 75.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Alexandria | 3–5 business days | EGP 75 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "shipping-alexandria-ar-msa",
+      "group_id": "shipping-alexandria",
+      "split": "dev",
+      "question": "ما مدة ورسوم التوصيل إلى الإسكندرية ومتى تبدأ المدة؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "من 3 إلى 5 أيام عمل بعد الشحن مقابل 75 جنيهًا.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Alexandria | 3–5 business days | EGP 75 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "shipping-alexandria-ar-egy",
+      "group_id": "shipping-alexandria",
+      "split": "dev",
+      "question": "توصيل إسكندرية بكام وبياخد قد إيه والمدة بتبدأ من إمتى؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "من 3 لـ5 أيام عمل بعد خروج الطلب من المخزن، بـ75 جنيه.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Alexandria | 3–5 business days | EGP 75 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "shipping-other-governorates-en",
+      "group_id": "shipping-other-governorates",
+      "split": "dev",
+      "question": "What does delivery cost outside Cairo, Giza and Alexandria, and what is the estimate?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "EGP 90, with an estimate of 5–7 business days after dispatch.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Other Egyptian governorates | 5–7 business days | EGP 90 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "shipping-other-governorates-ar-msa",
+      "group_id": "shipping-other-governorates",
+      "split": "dev",
+      "question": "ما رسوم ومدة التوصيل لباقي المحافظات خارج القاهرة والجيزة والإسكندرية؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "90 جنيهًا ومن 5 إلى 7 أيام عمل بعد الشحن.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Other Egyptian governorates | 5–7 business days | EGP 90 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "shipping-other-governorates-ar-egy",
+      "group_id": "shipping-other-governorates",
+      "split": "dev",
+      "question": "لو محافظتي مش القاهرة ولا الجيزة ولا إسكندرية، التوصيل بكام وفي كام يوم؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "90 جنيه ومن 5 لـ7 أيام عمل بعد الشحن.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "| Other Egyptian governorates | 5–7 business days | EGP 90 |",
+          "grade": 1
+        },
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "free-delivery-en",
+      "group_id": "free-delivery",
+      "split": "dev",
+      "question": "Does this policy offer free shipping if I buy an expensive item?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "No free-delivery offer is specified; do not invent a purchase threshold.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "There is no free-delivery offer in this demo policy.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "free-delivery-ar-msa",
+      "group_id": "free-delivery",
+      "split": "dev",
+      "question": "هل تتضمن هذه السياسة شحنًا مجانيًا عند شراء منتج مرتفع السعر؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "لا يوجد عرض توصيل مجاني في السياسة؛ لا تخترع حدًا لقيمة الشراء.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "There is no free-delivery offer in this demo policy.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "free-delivery-ar-egy",
+      "group_id": "free-delivery",
+      "split": "dev",
+      "question": "لو اشتريت حاجة غالية، الشحن هيبقى ببلاش حسب السياسة؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "مفيش عرض شحن مجاني في السياسة، وما ينفعش نخترع مبلغ معين يدي شحن مجاني.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "There is no free-delivery offer in this demo policy.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "estimate-start-en",
+      "group_id": "estimate-start",
+      "split": "dev",
+      "question": "I placed an order today. Does the delivery estimate start immediately?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "The estimate starts after dispatch, not when placing the order.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "estimate-start-ar-msa",
+      "group_id": "estimate-start",
+      "split": "dev",
+      "question": "هل تبدأ مدة التوصيل فور تقديم الطلب اليوم؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "تبدأ المدة بعد الشحن وليس عند تقديم الطلب.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "estimate-start-ar-egy",
+      "group_id": "estimate-start",
+      "split": "dev",
+      "question": "أنا طلبت النهارده، مدة التوصيل بتتحسب من دلوقتي؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "بتتحسب بعد خروج الطلب للشحن، مش من وقت الطلب.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "02-shipping.md",
+          "quote": "Delivery estimates below start after dispatch, not after placing an order.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "return-eligibility-items-en",
+      "group_id": "return-eligibility-items",
+      "split": "dev",
+      "question": "What condition and accompanying items are required for a change-of-mind return?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "Unused, in original packaging, with all accessories and proof of purchase.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Items must be unused, in their original packaging, and include all accessories and proof of purchase.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "return-eligibility-items-ar-msa",
+      "group_id": "return-eligibility-items",
+      "split": "dev",
+      "question": "ما حالة المنتج والمرفقات المطلوبة لإرجاع تغيير الرأي؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "غير مستخدم وفي عبوته الأصلية ومعه جميع الملحقات وإثبات الشراء.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Items must be unused, in their original packaging, and include all accessories and proof of purchase.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "return-eligibility-items-ar-egy",
+      "group_id": "return-eligibility-items",
+      "split": "dev",
+      "question": "عشان أرجع حاجة لتغيير الرأي، حالتها تبقى إيه وأرجع معاها إيه؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "تكون مش مستخدمة وفي علبتها الأصلية ومعاها كل الملحقات وإثبات الشراء.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Items must be unused, in their original packaging, and include all accessories and proof of purchase.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "return-shipping-payer-en",
+      "group_id": "return-shipping-payer",
+      "split": "dev",
+      "question": "Who pays return shipping when I simply change my mind?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "The customer pays; the policy specifies no fixed amount.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Customers pay the return shipping fee for change-of-mind returns; this policy does not specify a fixed return shipping amount.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "return-shipping-payer-ar-msa",
+      "group_id": "return-shipping-payer",
+      "split": "dev",
+      "question": "من يتحمل شحن الإرجاع إذا غيرت رأيي فقط؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "يتحمل العميل التكلفة ولا تحدد السياسة مبلغًا ثابتًا.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Customers pay the return shipping fee for change-of-mind returns; this policy does not specify a fixed return shipping amount.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "return-shipping-payer-ar-egy",
+      "group_id": "return-shipping-payer",
+      "split": "dev",
+      "question": "لو غيرت رأيي، مين بيدفع شحن الإرجاع؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "العميل بيدفع، والسياسة ما حددتش مبلغ ثابت.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Customers pay the return shipping fee for change-of-mind returns; this policy does not specify a fixed return shipping amount.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-bottle-return-en",
+      "group_id": "opened-bottle-return",
+      "split": "dev",
+      "question": "May I return a Thalassa Bottle I opened merely because I dislike it?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "An opened Thalassa Bottle is not eligible for a change-of-mind return.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Opened Aster Desk Lamps and opened Thalassa Bottles are not eligible for change-of-mind returns.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-bottle-return-ar-msa",
+      "group_id": "opened-bottle-return",
+      "split": "dev",
+      "question": "هل يمكن إرجاع زجاجة ثالاسا المفتوحة لمجرد عدم إعجابي بها؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "زجاجة ثالاسا المفتوحة غير مؤهلة لإرجاع تغيير الرأي.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Opened Aster Desk Lamps and opened Thalassa Bottles are not eligible for change-of-mind returns.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-bottle-return-ar-egy",
+      "group_id": "opened-bottle-return",
+      "split": "dev",
+      "question": "فتحت زجاجة ثالاسا ومش عاجباني، ينفع أرجعها لتغيير الرأي؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "الزجاجة المفتوحة ما ينفعش ترجع لمجرد تغيير الرأي.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Opened Aster Desk Lamps and opened Thalassa Bottles are not eligible for change-of-mind returns.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "unused-notebook-return-en",
+      "group_id": "unused-notebook-return",
+      "split": "dev",
+      "question": "Can I return an Olive Notebook after writing on one page?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "No change-of-mind return for a used notebook; it must be unused and in original packaging.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "An Olive Notebook can be returned only if unused and in its original packaging.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "unused-notebook-return-ar-msa",
+      "group_id": "unused-notebook-return",
+      "split": "dev",
+      "question": "هل يمكن إرجاع دفتر أوليف بعد الكتابة في صفحة منه؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "إرجاع تغيير الرأي يشترط أن يكون الدفتر غير مستخدم وفي عبوته الأصلية.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "An Olive Notebook can be returned only if unused and in its original packaging.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "unused-notebook-return-ar-egy",
+      "group_id": "unused-notebook-return",
+      "split": "dev",
+      "question": "كتبت في صفحة من دفتر أوليف، ينفع أرجعه لتغيير الرأي؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "لازم الدفتر يكون مش مستخدم وفي عبوته الأصلية؛ الكتابة فيه تعتبر استخدام.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "An Olive Notebook can be returned only if unused and in its original packaging.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-defect-claim-en",
+      "group_id": "opened-defect-claim",
+      "split": "dev",
+      "question": "Does opening the package automatically invalidate a defect claim?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "No. Opening alone does not exclude a defect claim; use the damage/defect procedure.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Opening a defective item does not by itself exclude a defect claim; follow the damaged or defective item procedure instead.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-defect-claim-ar-msa",
+      "group_id": "opened-defect-claim",
+      "split": "dev",
+      "question": "هل فتح العبوة يسقط تلقائيًا حق تقديم بلاغ عيب وفق هذه السياسة؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "لا؛ فتح المنتج المعيب وحده لا يمنع البلاغ، وتتبع إجراءات التلف أو العيب.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Opening a defective item does not by itself exclude a defect claim; follow the damaged or defective item procedure instead.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "opened-defect-claim-ar-egy",
+      "group_id": "opened-defect-claim",
+      "split": "dev",
+      "question": "فتح العلبة لوحده يخلي بلاغ العيب مرفوض تلقائي؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "لأ، الفتح لوحده مش سبب لرفض بلاغ العيب؛ اتبع إجراءات التلف أو العيب.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "Opening a defective item does not by itself exclude a defect claim; follow the damaged or defective item procedure instead.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "verified-damage-shipping-en",
+      "group_id": "verified-damage-shipping",
+      "split": "dev",
+      "question": "After arrival damage is verified, who pays return shipping?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "The store covers it for verified arrival damage or defects.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "The store covers return shipping for verified damage or defects on arrival.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "verified-damage-shipping-ar-msa",
+      "group_id": "verified-damage-shipping",
+      "split": "dev",
+      "question": "بعد التحقق من تلف عند الاستلام، من يدفع شحن الإرجاع؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "يتحمل المتجر شحن الإرجاع للتلف أو العيب المؤكد عند الاستلام.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "The store covers return shipping for verified damage or defects on arrival.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "verified-damage-shipping-ar-egy",
+      "group_id": "verified-damage-shipping",
+      "split": "dev",
+      "question": "لو اتأكدوا إن الحاجة وصلت تالفة، مين يدفع شحن الإرجاع؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "المتجر بيتحمله لو التلف أو العيب عند الاستلام اتأكد.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "The store covers return shipping for verified damage or defects on arrival.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "verified-damage-remedy-en",
+      "group_id": "verified-damage-remedy",
+      "split": "dev",
+      "question": "Once support verifies arrival damage, can I choose a refund instead of replacement?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "Yes, after verification the customer may choose replacement or refund.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "After support verifies the issue, the customer can choose a replacement or refund.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "verified-damage-remedy-ar-msa",
+      "group_id": "verified-damage-remedy",
+      "split": "dev",
+      "question": "بعد تحقق الدعم من التلف عند الاستلام، هل يمكن اختيار استرداد بدل الاستبدال؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "نعم، بعد التحقق يمكن اختيار الاستبدال أو الاسترداد.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "After support verifies the issue, the customer can choose a replacement or refund.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "verified-damage-remedy-ar-egy",
+      "group_id": "verified-damage-remedy",
+      "split": "dev",
+      "question": "بعد ما الدعم يتأكد من التلف، أقدر أختار فلوسي بدل البديل؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "أيوه، بعد التحقق تقدر تختار بديل أو استرداد.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "After support verifies the issue, the customer can choose a replacement or refund.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "late-defect-warranty-path-en",
+      "group_id": "late-defect-warranty-path",
+      "split": "dev",
+      "question": "My Aster lamp has a manufacturing fault after the 48-hour arrival window but within the first month after purchase. Is the claim automatically refused?",
+      "language": "en",
+      "category": "multi_document",
+      "reference_answer": "No automatic decision: support reviews the late case. A possible manufacturing-defect claim is assessed under the 12-month-from-purchase limited warranty; do not promise approval.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "If more than 48 hours have passed, a support agent must review the case; the assistant must not automatically approve or deny it.",
+          "grade": 1
+        },
+        {
+          "document": "04-warranty.md",
+          "quote": "The Aster Desk Lamp carries a limited 12-month warranty from the purchase date covering manufacturing defects.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "late-defect-warranty-path-ar-msa",
+      "group_id": "late-defect-warranty-path",
+      "split": "dev",
+      "question": "ظهر عيب تصنيع في مصباح أستر بعد مهلة 48 ساعة ولكن خلال أول شهر من الشراء؛ هل يرفض البلاغ تلقائيًا؟",
+      "language": "ar_msa",
+      "category": "multi_document",
+      "reference_answer": "لا يصدر قرار تلقائي؛ يراجع الدعم الحالة. وقد تقيم المطالبة وفق الضمان المحدود لعيوب التصنيع لمدة 12 شهرًا من الشراء دون ضمان الموافقة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "If more than 48 hours have passed, a support agent must review the case; the assistant must not automatically approve or deny it.",
+          "grade": 1
+        },
+        {
+          "document": "04-warranty.md",
+          "quote": "The Aster Desk Lamp carries a limited 12-month warranty from the purchase date covering manufacturing defects.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "late-defect-warranty-path-ar-egy",
+      "group_id": "late-defect-warranty-path",
+      "split": "dev",
+      "question": "عيب تصنيع ظهر في أستر بعد مهلة الـ48 ساعة بس في أول شهر بعد الشراء، كده يترفض تلقائي؟",
+      "language": "ar_egy",
+      "category": "multi_document",
+      "reference_answer": "مفيش رفض أو قبول تلقائي؛ الدعم يراجع، وممكن تتقيم مطالبة عيب التصنيع تحت ضمان الـ12 شهر من الشراء من غير وعد بالموافقة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "03-returns.md",
+          "quote": "If more than 48 hours have passed, a support agent must review the case; the assistant must not automatically approve or deny it.",
+          "grade": 1
+        },
+        {
+          "document": "04-warranty.md",
+          "quote": "The Aster Desk Lamp carries a limited 12-month warranty from the purchase date covering manufacturing defects.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "individual-refund-status-en",
+      "group_id": "individual-refund-status",
+      "split": "dev",
+      "question": "Has my refund for order 12345 reached my card yet?",
+      "language": "en",
+      "category": "unanswerable",
+      "reference_answer": "No individual refund-status access. Offer human review; do not infer completion from the general processing window.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "individual-refund-status-ar-msa",
+      "group_id": "individual-refund-status",
+      "split": "dev",
+      "question": "هل وصل استرداد طلبي رقم 12345 إلى بطاقتي الآن؟",
+      "language": "ar_msa",
+      "category": "unanswerable",
+      "reference_answer": "لا يوجد وصول لحالة استرداد فردية؛ اعرض مراجعة موظف ولا تستنتج التنفيذ من المدة العامة.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "individual-refund-status-ar-egy",
+      "group_id": "individual-refund-status",
+      "split": "dev",
+      "question": "فلوس استرداد أوردر 12345 وصلت الكارت دلوقتي ولا لأ؟",
+      "language": "ar_egy",
+      "category": "unanswerable",
+      "reference_answer": "ما عنديش حالة استرداد الأوردر؛ محتاج موظف يراجع، والمدة العامة مش دليل إن الفلوس وصلت.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "warranty-claim-documents-en",
+      "group_id": "warranty-claim-documents",
+      "split": "dev",
+      "question": "What does support need to review before approving a lamp warranty claim?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "The receipt and fault description.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "Support must review the receipt and fault description before approving a claim.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "warranty-claim-documents-ar-msa",
+      "group_id": "warranty-claim-documents",
+      "split": "dev",
+      "question": "ما الذي يراجعه الدعم قبل الموافقة على مطالبة ضمان المصباح؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "إيصال الشراء ووصف العطل.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "Support must review the receipt and fault description before approving a claim.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "warranty-claim-documents-ar-egy",
+      "group_id": "warranty-claim-documents",
+      "split": "dev",
+      "question": "الدعم لازم يراجع إيه قبل ما يوافق على ضمان المصباح؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "إيصال الشراء ووصف العطل.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "Support must review the receipt and fault description before approving a claim.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "warranty-approval-limit-en",
+      "group_id": "warranty-approval-limit",
+      "split": "dev",
+      "question": "Can you guarantee my warranty claim will be approved and replaced today?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "No such guarantee. Support must review the claim; do not promise approval, repair time or replacement.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "Do not promise approval, a particular repair time, or a replacement without that review.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "warranty-approval-limit-ar-msa",
+      "group_id": "warranty-approval-limit",
+      "split": "dev",
+      "question": "هل يمكنك ضمان قبول مطالبة الضمان واستبدال المنتج اليوم؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "لا يمكن ضمان ذلك؛ يلزم فحص الدعم ولا تعد بالموافقة أو مدة إصلاح أو استبدال.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "Do not promise approval, a particular repair time, or a replacement without that review.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "warranty-approval-limit-ar-egy",
+      "group_id": "warranty-approval-limit",
+      "split": "dev",
+      "question": "تقدر تضمن إن الضمان يتوافق عليه ويتبدل النهارده؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "ما أقدرش أضمن ده؛ الدعم لازم يراجع من غير وعد بقبول أو وقت إصلاح أو استبدال.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "04-warranty.md",
+          "quote": "Do not promise approval, a particular repair time, or a replacement without that review.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "repair-turnaround-unknown-en",
+      "group_id": "repair-turnaround-unknown",
+      "split": "dev",
+      "question": "Exactly how many days will my lamp repair take?",
+      "language": "en",
+      "category": "unanswerable",
+      "reference_answer": "No fixed repair turnaround is documented. Offer human review rather than inventing a duration.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "repair-turnaround-unknown-ar-msa",
+      "group_id": "repair-turnaround-unknown",
+      "split": "dev",
+      "question": "كم يومًا بالضبط سيستغرق إصلاح مصباحي؟",
+      "language": "ar_msa",
+      "category": "unanswerable",
+      "reference_answer": "لا توجد مدة إصلاح ثابتة موثقة؛ اعرض مراجعة بشرية ولا تخترع مدة.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "repair-turnaround-unknown-ar-egy",
+      "group_id": "repair-turnaround-unknown",
+      "split": "dev",
+      "question": "إصلاح المصباح هياخد كام يوم بالظبط؟",
+      "language": "ar_egy",
+      "category": "unanswerable",
+      "reference_answer": "مفيش مدة إصلاح ثابتة في المستندات، محتاج موظف يراجع من غير تخمين.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "out-of-warranty-price-en",
+      "group_id": "out-of-warranty-price",
+      "split": "dev",
+      "question": "What exact price will I pay to repair an out-of-warranty Aster lamp?",
+      "language": "en",
+      "category": "unanswerable",
+      "reference_answer": "No out-of-warranty repair price is documented. A support agent must review.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "out-of-warranty-price-ar-msa",
+      "group_id": "out-of-warranty-price",
+      "split": "dev",
+      "question": "ما السعر المحدد لإصلاح مصباح أستر خارج الضمان؟",
+      "language": "ar_msa",
+      "category": "unanswerable",
+      "reference_answer": "لا تحدد المستندات سعر إصلاح خارج الضمان؛ يلزم مراجعة الدعم.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "out-of-warranty-price-ar-egy",
+      "group_id": "out-of-warranty-price",
+      "split": "dev",
+      "question": "إصلاح أستر خارج الضمان بكام بالظبط؟",
+      "language": "ar_egy",
+      "category": "unanswerable",
+      "reference_answer": "المستندات ما حددتش سعر إصلاح خارج الضمان؛ محتاج مراجعة الدعم.",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "cancellation-after-dispatch-en",
+      "group_id": "cancellation-after-dispatch",
+      "split": "dev",
+      "question": "My order has already shipped. Is cancellation guaranteed?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "No. After dispatch cancellation is not guaranteed; support must explain the available options.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "05-faq.md",
+          "quote": "Once dispatched, cancellation is not guaranteed; support will explain the applicable options.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "cancellation-after-dispatch-ar-msa",
+      "group_id": "cancellation-after-dispatch",
+      "split": "dev",
+      "question": "تم شحن طلبي بالفعل؛ هل الإلغاء مضمون؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "لا؛ بعد الشحن لا يضمن الإلغاء ويشرح الدعم الخيارات المتاحة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "05-faq.md",
+          "quote": "Once dispatched, cancellation is not guaranteed; support will explain the applicable options.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "cancellation-after-dispatch-ar-egy",
+      "group_id": "cancellation-after-dispatch",
+      "split": "dev",
+      "question": "الأوردر اتشحن خلاص، الإلغاء مضمون؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "لأ، بعد الشحن الإلغاء مش مضمون؛ الدعم يوضح الخيارات.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "05-faq.md",
+          "quote": "Once dispatched, cancellation is not guaranteed; support will explain the applicable options.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "illustrative-mailbox-en",
+      "group_id": "illustrative-mailbox",
+      "split": "dev",
+      "question": "Does the illustrative support address mean a ticket has emailed a real support team?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "No. The illustrative mailbox is not working; the local handoff does not justify claiming an email was sent.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "06-support.md",
+          "quote": "The illustrative address support@helios-home.example is not a working mailbox.",
+          "grade": 1
+        },
+        {
+          "document": "06-support.md",
+          "quote": "The application must use its local handoff workflow once implemented; it must not claim that an email was sent.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "illustrative-mailbox-ar-msa",
+      "group_id": "illustrative-mailbox",
+      "split": "dev",
+      "question": "هل عنوان الدعم التوضيحي يعني أن التذكرة أرسلت بريدًا لفريق حقيقي؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "لا؛ البريد التوضيحي غير فعال، ولا يعني التسليم المحلي إرسال رسالة بريد.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "06-support.md",
+          "quote": "The illustrative address support@helios-home.example is not a working mailbox.",
+          "grade": 1
+        },
+        {
+          "document": "06-support.md",
+          "quote": "The application must use its local handoff workflow once implemented; it must not claim that an email was sent.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "illustrative-mailbox-ar-egy",
+      "group_id": "illustrative-mailbox",
+      "split": "dev",
+      "question": "عنوان الدعم اللي في المثال معناه إن التذكرة بعتت إيميل لفريق حقيقي؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "لأ، البريد مثال مش شغال، والتذكرة المحلية مش دليل إن إيميل اتبعت.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "06-support.md",
+          "quote": "The illustrative address support@helios-home.example is not a working mailbox.",
+          "grade": 1
+        },
+        {
+          "document": "06-support.md",
+          "quote": "The application must use its local handoff workflow once implemented; it must not claim that an email was sent.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "handoff-minimal-context-en",
+      "group_id": "handoff-minimal-context",
+      "split": "dev",
+      "question": "What information should I provide for human review of a delayed order? Do you need my national ID?",
+      "language": "en",
+      "category": "factual",
+      "reference_answer": "Order number and a short issue description; do not request national ID, payment credentials or unnecessary personal data.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "06-support.md",
+          "quote": "Ask for the order number and a short description when a person needs to review an order, refund, warranty claim, delivery delay, or disputed policy.",
+          "grade": 1
+        },
+        {
+          "document": "06-support.md",
+          "quote": "Never request payment credentials, national identity numbers, or unnecessary personal data in a demo conversation.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "handoff-minimal-context-ar-msa",
+      "group_id": "handoff-minimal-context",
+      "split": "dev",
+      "question": "ما المعلومات اللازمة لمراجعة بشرية لطلب متأخر؟ هل تحتاجون رقمي القومي؟",
+      "language": "ar_msa",
+      "category": "factual",
+      "reference_answer": "رقم الطلب ووصف مختصر؛ لا يطلب الرقم القومي أو بيانات الدفع السرية أو بيانات شخصية غير ضرورية.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "06-support.md",
+          "quote": "Ask for the order number and a short description when a person needs to review an order, refund, warranty claim, delivery delay, or disputed policy.",
+          "grade": 1
+        },
+        {
+          "document": "06-support.md",
+          "quote": "Never request payment credentials, national identity numbers, or unnecessary personal data in a demo conversation.",
+          "grade": 1
+        }
+      ]
+    },
+    {
+      "id": "handoff-minimal-context-ar-egy",
+      "group_id": "handoff-minimal-context",
+      "split": "dev",
+      "question": "عشان موظف يراجع أوردر متأخر أبعت إيه؟ لازم الرقم القومي؟",
+      "language": "ar_egy",
+      "category": "factual",
+      "reference_answer": "رقم الأوردر ووصف مختصر للمشكلة؛ مش محتاج رقم قومي ولا بيانات دفع سرية ولا بيانات شخصية زيادة.",
+      "answerable": true,
+      "evidence": [
+        {
+          "document": "06-support.md",
+          "quote": "Ask for the order number and a short description when a person needs to review an order, refund, warranty claim, delivery delay, or disputed policy.",
+          "grade": 1
+        },
+        {
+          "document": "06-support.md",
+          "quote": "Never request payment credentials, national identity numbers, or unnecessary personal data in a demo conversation.",
+          "grade": 1
+        }
+      ]
+    }
+  ],
+  "split_status": "candidate"
+}

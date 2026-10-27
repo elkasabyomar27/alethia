@@ -1,0 +1,1 @@
+"""ALETHIA local application backend."""

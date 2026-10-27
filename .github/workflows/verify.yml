@@ -1,0 +1,41 @@
+name: Verify ALETHIA
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install backend dependencies
+        run: python -m pip install -r backend/requirements-lock.txt
+      - name: Check dependency consistency
+        run: python -m pip check
+      - name: Audit publication candidates
+        run: python scripts/prepare_github.py
+      - name: Test backend and public data contracts
+        env:
+          PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
+        run: python -m pytest -c backend/pytest.ini -q
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+      - name: Verify local build
+        working-directory: frontend
+        run: npm run build
+      - name: Verify portfolio build
+        working-directory: frontend
+        run: npm run build:portfolio
+      - name: Check public bundle boundary
+        run: python scripts/check_portfolio_bundle.py
+      - name: Check actual guided components
+        run: node scripts/check_portfolio_render.mjs
